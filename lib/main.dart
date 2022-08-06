@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'I LOVE U',
       theme: ThemeData(       
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.blue,
       ),
       home: HomeScreen(),
     );

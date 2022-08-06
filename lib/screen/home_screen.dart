@@ -14,15 +14,50 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text("HomeScreen"),
       ),
-      drawer: Drawer(),
-      body: const Center(
-        child: Text("Hello from HomeScreen"),
+      drawer: const Drawer(),
+      body: Container(
+        margin: const EdgeInsets.all(10),
+        child: Center(
+          child: Column(
+            children: [
+              Column(
+                children: [
+                  Text("hello world"),
+                  ElevatedButton(
+                    onPressed: () => {},
+                    child: Text("Press me"),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("hello world"),
+                  ElevatedButton(
+                    onPressed: () => {},
+                    child: Text("Press me"),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "หน้าหลัก"),
-        BottomNavigationBarItem(icon: Icon(Icons.article), label: "ข่าวสาร"),
-        BottomNavigationBarItem(icon: Icon(Icons.info), label: "เกี่ยวกับ"),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "หน้าหลัก",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.article),
+            label: "ข่าวสาร",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: "เกี่ยวกับ",
+          ),
+        ],
+      ),
     );
   }
 }
